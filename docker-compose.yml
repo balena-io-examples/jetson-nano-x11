@@ -1,0 +1,15 @@
+version: '2'
+services:
+  nano_32_2:
+    build: ./nano_32_2
+    privileged: true
+    network_mode: host
+    labels:
+      io.balena.features.optional: 1
+  nano_32_3_1:
+    build: ./nano_32_3_1
+    privileged: true
+    network_mode: host
+    labels:
+      io.balena.features.optional: 1
+
